@@ -2,12 +2,14 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
-import {NavigationComponent} from './navigation.component';
-import {MemberFunctionComponent} from './memberFunction.component';
+// import {ProcessMemberFunctionsComponent} from './processMemberFunctions.component';
+// import {MemberFunctionComponent} from './memberFunction.component';
+import {MemberFunctionService} from './memberFunction.service';
 
 @NgModule({
   imports:      [ BrowserModule ],
-  declarations: [ AppComponent, NavigationComponent , MemberFunctionComponent],
+  declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ],
+  providers:    [ MemberFunctionService ]
 })
 export class AppModule { }
