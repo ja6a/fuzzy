@@ -72,11 +72,13 @@ export class AppComponent implements OnInit {
     if (value - this.min === 0 || this.max - this.min === 0) {
       return 0;
     } else {
-      return Math.floor((value - this.min) / ( this.max - this.min ) * 100);
+      return (value - this.min) / ( this.max - this.min ) * 100;
     }
   };
 
-  fuzzyClick(helper: MemberFunctionData): void {
-    console.log('clicked ' + helper.name);
+  fuzzyClick(helper: MemberFunctionHelper): void {
+    let text = helper.name + ',' + helper.fuzzy1 + ',' + helper.core1 + ',' + helper.core2 + ',' + helper.fuzzy2;
+    console.log(text);
+    alert(text);
   }
 }

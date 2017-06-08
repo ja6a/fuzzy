@@ -85,7 +85,7 @@ describe('AppComponent', function () {
     let count: number;
     count = 0;
     for (let helper of comp.helpers) {
-      expect(helper.fuzzy1).toEqual(values[count]);
+      expect(Math.trunc(helper.fuzzy1)).toEqual(values[count]);
       count++;
     }
   });
@@ -97,7 +97,7 @@ describe('AppComponent', function () {
     let count: number;
     count = 0;
     for (let helper of comp.helpers) {
-      expect(helper.fuzzy2).toEqual(values[count]);
+      expect(Math.trunc(helper.fuzzy2)).toEqual(values[count]);
       count++;
     }
   });
@@ -109,7 +109,7 @@ describe('AppComponent', function () {
     let count: number;
     count = 0;
     for (let helper of comp.helpers) {
-      expect(helper.core1).toEqual(values[count]);
+      expect(Math.trunc(helper.core1)).toEqual(values[count]);
       count++;
     }
   });
@@ -121,7 +121,7 @@ describe('AppComponent', function () {
     let count: number;
     count = 0;
     for (let helper of comp.helpers) {
-      expect(helper.core2).toEqual(values[count]);
+      expect(Math.trunc(helper.core2)).toEqual(values[count]);
       count++;
     }
   });

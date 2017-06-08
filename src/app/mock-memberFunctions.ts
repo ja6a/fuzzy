@@ -38,7 +38,7 @@ export class Data {
   generateLarge(): MemberFunctionData[] {
     let data: MemberFunctionData[];
     data = [];
-    let value = 0;
+    let value = 1000;
     for (let i = 0; i < 10; i++) {
       let datum = new MemberFunctionData;
       datum.name = '' + i;
